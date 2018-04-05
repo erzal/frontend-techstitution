@@ -1,25 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-     <title>Our first webpage</title>
+    <head>
+     <title></title>
      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  </head>
-
-  <body>
-
-     <div class="container">
-        <div class="row">
-           <div class="col-md-2 offset-md-2 column">
-              <p>First Column Content</p>
-           </div>
-           <div class="col-md-2 offset-md-2 column">
-              <p>Second Column Content</p>
-           </div>
-           <div class="col-md-4 column">
-              <p>Third Column Content</p>
-           </div>
-        </div>
-     </div>
-
+     <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="wrapper">
+        <form>
+            <div class="container">
+                <h1>Shto kontraten e re</h1><br><br>
+                <h3>Prokurorimi:</h3><br>
+                <div class="row">
+                    <div class="col-md-6 column">
+                        <div class="form-group">
+                            <label>Nr. rendor i prokurimit </label>
+                            <input type="number" name="nr.rendor" class="form-control" placeholder="Nr. rendor i prokurimit">
+                        </div>    
+                    </div>
+                    <div class="col-md-6 column">
+                        <div class="form-group">
+                            <label>Lloji i prokurimit</label>
+                            <input type="text" name="lloji" class="form-control" placeholder="Lloji i prokurimit">
+                        </div>
+                    </div>
+                    <div class="col-md-12 column">
+                        <div class="form-group">
+                            <label>Aktiviteti i prokurimit</label>
+                            <input type="text" name="aktiviteti" class="form-control" placeholder="Aktiviteti i prokurimit">
+                        </div>
+                    </div>
+                    <div class="col-md-12 column">
+                        <br><br><h3>Datat:</h3><br>
+                    </div>
+                    <div class="col-md-6 column">
+                        <div class="form-group">
+                            <label>Data e inicimit te aktivitetit te prokurimit </label>
+                            <input type="date" name="inicimi" class="form-control">
+                        </div>    
+                    </div>
+                    <div class="col-md-6 column">
+                        <div class="form-group">
+                            <label>Data e publikimit te shpalljes</label>
+                            <input type="date" name="publikimi" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-12 column">
+                        <div class="form-group">
+                            <label>Data e nenshkrimit te kontrates</label>
+                            <input type="date" name="nenshkrimi" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-12 column">
+                        <label>Afatet per implementimin e kontrates </label>
+                    </div>
+                    <div class="col-md-6 column">
+                        <div class="form-group">
+                            <input type="date" name="fillimi" class="form-control" >
+                        </div>    
+                    </div>
+                    <div class="col-md-6 column">
+                        <div class="form-group">
+                            <input type="date" name="mbarimi" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-12 column">
+                        <div class="form-group">
+                            <label>Data e permbylljes se kontrates (data e pranimit te perkohshem/preliminar)</label>
+                            <input type="date" name="permbyllja" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-12 column">
+                        <br><br><h3>Çmimi dhe te dhenat tjera:</h3><br>
+                    </div>
+                    <div class="col-md-6 column">
+                        <div class="form-group">
+                            <label>Çmimi i kontrates (duke perfshir te gjitha taksat) </label>
+                            <input type="number" name="cmimikontrates" class="form-control" placeholder="Çmimi i kontrates">
+                        </div>    
+                    </div>
+                    <div class="col-md-6 column">
+                        <div class="form-group">
+                            <label>Çmimi total i paguar per kontraten</label><br>
+                            <input type="number" name="cmimitotal" class="form-control" placeholder="Çmimi total i paguar per kontraten">
+                        </div>
+                    </div>
+                    <div class="col-md-12 column">
+                        <div class="form-group">
+                            <label>Emri i te cilit i eshte dhene kontrata</label>
+                            <input type="text" name="emri" class="form-control" placeholder="Emri dhe Mbiemri">
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="col-md-6 column"><button type="submit" class="btn btn-info btn-lg btn-block">Dergo</button></div>
+                    <div class="col-md-6 column"><button type="reset" class="btn btn-secondary btn-lg btn-block">Fshij</button></div>
+               </div>
+        </form>
   </body>
 </html>
